@@ -1,0 +1,32 @@
+{% extends "AppCoder/padre.html" %}
+
+{% load static %} 
+
+{% block contenidoQueCambia %} 
+
+<div> 
+    <!-- Aqui va lo que cambia, y lo asociado a esta vista :) -->
+
+    <h1>Formulario - Agregar Curso</h1>
+    
+    {% if miFormulario.errors %} 
+
+    <p style="color: red;"> Estan mal los datos, revisar</p>
+    
+    {%endif %}
+    
+        <form action="" method="POST">{% csrf_token %} 
+    
+            <table>
+    
+                {{ miFormulario.as_table }}
+    
+            </table>
+            
+            <input type="submit" value="Enviar">
+    
+        </form>
+</div>
+
+
+{% endblock%} 

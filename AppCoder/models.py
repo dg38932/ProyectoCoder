@@ -1,3 +1,4 @@
+from pickle import FALSE
 from django.db import models
 
 # Create your models here.
@@ -19,6 +20,8 @@ class Profesor(models.Model):
 class Entregable(models.Model):
     nombre=models.CharField(max_length=30)
     fechadeentrega=models.DateField()
+    entregado = models.BooleanField(null=FALSE)
+
 
 
 

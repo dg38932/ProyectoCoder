@@ -1,0 +1,21 @@
+{% extends "AppCoder/padre.html" %}
+
+{% load static %} 
+
+{% block contenidoQueCambia %} 
+
+<div> 
+  
+    <h1>Formulario - Busqueda</h1>
+
+        <form action="/AppCoder/Buscar/" method="GET"> 
+    
+            <input type="number" name="camada" id="camada">
+
+            <input type="submit" value="buscar">
+        
+        </form>
+</div>
+
+
+{% endblock%} 
