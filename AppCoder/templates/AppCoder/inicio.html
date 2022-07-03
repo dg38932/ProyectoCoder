@@ -4,6 +4,10 @@
 
 {% block contenidoQueCambia %} 
 
+<h1>{{mensaje}}</h1>
+
+<button><a href="{% url 'Logout' %}">Logout</a></button>
+
 <h3>Podes buscar una camada:</h3>
 
 <form action="/AppCoder/buscar/" method="GET">
